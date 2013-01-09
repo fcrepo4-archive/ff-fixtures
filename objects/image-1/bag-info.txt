@@ -1,0 +1,4 @@
+Bag-Software-Agent: bagit.py <http://github.com/edsu/bagit>
+Bagging-Date: 2013-01-09
+Contact-Name: Chris Beer
+Payload-Oxum: 80915.1
