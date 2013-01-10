@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <mediatype>movies</mediatype>
+  <collection>opensource_movies</collection>
+  <title>Bars and Tone</title>
+  <description>Bars and tone test.</description>
+  <subject>bars; tone; bars and tone; bars tone</subject>
+  <runtime>10 seconds</runtime>
+  <sound>sound</sound>
+  <creator/>
+  <licenseurl>http://creativecommons.org/publicdomain/zero/1.0/</licenseurl>
+  <identifier>BarsAndTone</identifier>
+  <uploader>nambot@gmail.com</uploader>
+  <addeddate>2011-01-12 16:41:43</addeddate>
+  <publicdate>2011-01-12 16:42:23</publicdate>
+</metadata>

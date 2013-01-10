@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="Bars-And-Tone.mov" source="original">
+    <format>QuickTime</format>
+    <mtime>1294850490</mtime>
+    <size>37935941</size>
+    <md5>3361341946427b1879427679183992b5</md5>
+    <crc32>44cbd8bf</crc32>
+    <sha1>c54922632ed339897b99d97d03e3769d1080dce6</sha1>
+  </file>
+  <file name="Bars-And-Tone_512kb.mp4" source="derivative">
+    <format>512Kb MPEG4</format>
+    <original>Bars-And-Tone.mov</original>
+    <mtime>1294850531</mtime>
+    <size>80826</size>
+    <md5>40784658488c2c6a8ff7efbd8e2b81b8</md5>
+    <crc32>6763401</crc32>
+    <sha1>a74f7948d3d387a2d704acab694e71fb868291f2</sha1>
+  </file>
+  <file name="BarsAndTone.thumbs/Bars-And-Tone_000005.jpg" source="derivative">
+    <format>Thumbnail</format>
+    <original>Bars-And-Tone.mov</original>
+    <mtime>1294850526</mtime>
+    <size>3648</size>
+    <md5>34f15e5edfdcd2e5e2d27cb3406f01c7</md5>
+    <crc32>5984fc34</crc32>
+    <sha1>3c748eb6e8400eea2a9f011624a95086b65c38b9</sha1>
+  </file>
+  <file name="BarsAndTone.thumbs/Bars-And-Tone_000010.jpg" source="derivative">
+    <format>Thumbnail</format>
+    <original>Bars-And-Tone.mov</original>
+    <mtime>1294850526</mtime>
+    <size>3648</size>
+    <md5>34f15e5edfdcd2e5e2d27cb3406f01c7</md5>
+    <crc32>5984fc34</crc32>
+    <sha1>3c748eb6e8400eea2a9f011624a95086b65c38b9</sha1>
+  </file>
+  <file name="BarsAndTone.thumbs/Bars-And-Tone_000001.jpg" source="derivative">
+    <format>Thumbnail</format>
+    <original>Bars-And-Tone.mov</original>
+    <mtime>1294850525</mtime>
+    <size>3648</size>
+    <md5>34f15e5edfdcd2e5e2d27cb3406f01c7</md5>
+    <crc32>5984fc34</crc32>
+    <sha1>3c748eb6e8400eea2a9f011624a95086b65c38b9</sha1>
+  </file>
+  <file name="Bars-And-Tone.gif" source="derivative">
+    <format>Animated GIF</format>
+    <original>Bars-And-Tone.mov</original>
+    <mtime>1294850528</mtime>
+    <size>17811</size>
+    <md5>9ae10ed4e0887d5b11e17cf6e9d0cfe8</md5>
+    <crc32>1a9de8e</crc32>
+    <sha1>e5587feb34e3a1fbcc1c41cd4c12d31b2116c3eb</sha1>
+  </file>
+  <file name="Bars-And-Tone.ogv" source="derivative">
+    <format>Ogg Video</format>
+    <original>Bars-And-Tone.mov</original>
+    <mtime>1294850533</mtime>
+    <size>84310</size>
+    <md5>4a912216f69cc5ac682a4fe427983d1b</md5>
+    <crc32>44311dad</crc32>
+    <sha1>54704a6fb5b075eab622ad8ffaa191dda1a1ce08</sha1>
+  </file>
+  <file name="BarsAndTone_meta.xml" source="original">
+    <format>Metadata</format>
+    <mtime>1294850543</mtime>
+    <size>593</size>
+    <md5>d38e06d8a47bbefa1d1135f532e3b405</md5>
+    <crc32>6c65fa46</crc32>
+    <sha1>ad789e141816bedc48e6573a37faea763e6be3b6</sha1>
+  </file>
+  <file name="BarsAndTone_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>2b98ded3cf8c7a896f5c595932d7e659</md5>
+  </file>
+</files>

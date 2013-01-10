@@ -1,0 +1,5 @@
+Bag-Software-Agent: bagit.py <http://github.com/edsu/bagit>
+Bagging-Date: 2013-01-10
+Contact-Name: Chris Beer
+Payload-Oxum: 189985.6
+External-Identifier: http://archive.org/details/BarsAndTone
