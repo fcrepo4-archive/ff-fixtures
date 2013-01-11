@@ -1,0 +1,3 @@
+[submodule "openplanets-format-corpus"]
+	path = openplanets-format-corpus
+	url = git://github.com/openplanets/format-corpus.git
