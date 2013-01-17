@@ -46,15 +46,15 @@ echo " == Extracting Corpus"
 unzip ${PROCESSING_DIR}/${CORPUS_NAME}.zip -d ${PROCESSING_DIR}
 check_errs $? "unzip failed"
 
-chmod a+w -R ${PROCESSING_DIR}
-
-echo " == Bagging Corpus objects"
-python $BAGIT_PY_CMD --contact-name 'Digital Corpora' ${PROCESSING_DIR}/[0-9]*
-check_errs $? "bagging failed"
+chmod -R a+w ${PROCESSING_DIR}
 
 echo " == Moving bagged objects"
-for i in $( ls ${PROCESSING_DIR}/[0-9]* ); do
+for i in $( find ${PROCESSING_DIR} -maxdepth 1 -type d | grep -v "^govdocs$"); do
+python $BAGIT_PY_CMD --contact-name 'Digital Corpora' $i
+check_errs $? "bagging failed"
   mv $i objects
+
+check_errs $? "moving object failed"
 done
 
 touch ${PROCESSING_DIR}/processed_${CORPUS_NAME}
