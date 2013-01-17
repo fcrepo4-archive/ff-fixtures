@@ -46,6 +46,8 @@ echo " == Extracting Corpus"
 unzip ${PROCESSING_DIR}/${CORPUS_NAME}.zip -d ${PROCESSING_DIR}
 check_errs $? "unzip failed"
 
+chmod a+w -R ${PROCESSING_DIR}
+
 echo " == Bagging Corpus objects"
 python $BAGIT_PY_CMD --contact-name 'Digital Corpora' ${PROCESSING_DIR}/[0-9]*
 check_errs $? "bagging failed"
