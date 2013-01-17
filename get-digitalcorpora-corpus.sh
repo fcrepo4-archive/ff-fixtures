@@ -1,5 +1,17 @@
 #!/bin/bash
 
+check_errs()
+{
+  # Function. Parameter 1 is the return code
+  # Para. 2 is text to display on failure.
+  if [ "${1}" -ne "0" ]; then
+    echo "ERROR # ${1} : ${2}"
+     benchmark
+     exit 1
+  fi
+}
+
+
 CORPUS_NAME=thread${THREAD_ID-0}
 PROCESSING_DIR=govdocs
 BAGIT_PY_CMD=${BAGIT_PY-./bagit.py}
@@ -27,13 +39,16 @@ if [ -f ${PROCESSING_DIR}/${CORPUS_NAME}.zip ]; then
 else
   echo " == Downloading Corpus"
   curl -o ${PROCESSING_DIR}/${CORPUS_NAME}.zip http://digitalcorpora.org/corp/nps/files/govdocs1/zipfiles/${CORPUS_NAME}.zip
+  check_errs $? "download failed"
 fi
 
 echo " == Extracting Corpus"
 unzip ${PROCESSING_DIR}/${CORPUS_NAME}.zip -d ${PROCESSING_DIR}
+check_errs $? "unzip failed"
 
 echo " == Bagging Corpus objects"
 python $BAGIT_PY_CMD --contact-name 'Digital Corpora' ${PROCESSING_DIR}/[0-9]*
+check_errs $? "bagging failed"
 
 echo " == Moving bagged objects"
 for i in $( ls ${PROCESSING_DIR}/[0-9]* ); do
