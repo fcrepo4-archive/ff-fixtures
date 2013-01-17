@@ -26,7 +26,7 @@ if [ -f ${PROCESSING_DIR}/${CORPUS_NAME}.zip ]; then
   echo " (Found existing corpus; using it)"
 else
   echo " == Downloading Corpus"
-  curl -o ${CORPUS_NAME}.zip http://digitalcorpora.org/corp/nps/files/govdocs1/zipfiles/${CORPUS_NAME}.zip
+  curl -o ${PROCESSING_DIR}/${CORPUS_NAME}.zip http://digitalcorpora.org/corp/nps/files/govdocs1/zipfiles/${CORPUS_NAME}.zip
 fi
 
 echo " == Extracting Corpus"
