@@ -18,8 +18,7 @@ for LINE in $(cat $INPUT_SIZES)
 do
 	PATH=${OUTPUT_DIR}/${FILE_PREFIX}${COUNT}${FILE_SUFFIX}
 	echo "creating file ${PATH} of size ${LINE} MB"
-#	$DD_BIN if=/dev/urandom of=$PATH bs=1048576 count=${LINE}
-	$DD_BIN if=/dev/urandom of=$PATH bs=1024 count=${LINE}
+	$DD_BIN if=/dev/urandom of=$PATH bs=1048576 count=${LINE}
 	let COUNT=COUNT+1
 done
 
