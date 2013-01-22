@@ -24,9 +24,16 @@ do
 	let COUNT=COUNT+1
 done
 
-cd objects/random
-for FILE in *
+CURRENT_DIR=`pwd`
+cd ${OUTPUT_DIR} 
+# remove old manifest
+if [ -f manifest.txt ]; then
+	$RM_BIN manifest.txt
+fi
+
+#iterate over all the random files and add them to the manifest
+for FILE in *${FILE_SUFFIX}
 do
 	echo $FILE >> manifest.txt
 done
-cd ../..
+cd $CURRENT_DIR
