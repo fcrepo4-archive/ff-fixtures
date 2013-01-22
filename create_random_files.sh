@@ -1,11 +1,13 @@
 #!/bin/bash
 
+#detect os
+OS_NAME=`uname -s`
+
 OUTPUT_DIR=./objects/random
 FILE_PREFIX=random_
 FILE_SUFFIX=.data
 INPUT_SIZES=random_sizes.data
 DD_BIN=`which dd`
-MD5SUM_BIN=`which md5sum`
 RM_BIN=`which rm`
 COUNT=1
 
@@ -18,14 +20,13 @@ for LINE in $(cat $INPUT_SIZES)
 do
 	PATH=${OUTPUT_DIR}/${FILE_PREFIX}${COUNT}${FILE_SUFFIX}
 	echo "creating file ${PATH} of size ${LINE} MB"
-	$DD_BIN if=/dev/urandom of=$PATH bs=1048576 count=${LINE}
+	$DD_BIN if=/dev/zero of=$PATH bs=1048576 count=${LINE}
 	let COUNT=COUNT+1
 done
 
 cd objects/random
-$RM_BIN  manifest-md5.txt
 for FILE in *
 do
-	$MD5SUM_BIN $FILE >> manifest-md5.txt
+	echo $FILE >> manifest.txt
 done
 cd ../..
